@@ -1,0 +1,19 @@
+.headroom
+	will-change transform
+	transition all 200ms linear
+	background white
+
++break(tablet)
+	.headroom
+		&--not-top.headroom--pinned
+			// padding 20px 0
+
++break(mobile)
+	.headroom
+		&--not-top
+			padding 10px 15px
+			background white
+			box-shadow 0 0 30px rgba(black, .2)
+
+
+
