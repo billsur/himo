@@ -992,15 +992,24 @@ footer {
   left: -50px;
   margin: 0;
 }
-.hp .container {
+.hp > .container {
   display: flex;
   justify-content: space-between;
   padding: 400px 20px 0;
 }
 .hp__list {
   position: relative;
+  width: 350px;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+.hp__list img {
+  width: 300px;
 }
 .hp__lists {
+  overflow: auto;
+}
+.hp__lists .container {
   display: flex;
   justify-content: space-between;
 }
@@ -1127,7 +1136,7 @@ footer {
   .hp {
     background: url("/img/bg-recommendation.png") center top/1050px 500px no-repeat;
   }
-  .hp .container {
+  .hp > .container {
     padding: 300px 20px 0;
   }
   .hp .hp__title {
@@ -1170,7 +1179,7 @@ footer {
     top: 80px;
     left: 0;
   }
-  .hp .container {
+  .hp > .container {
     padding: 200px 0 0;
   }
   .hp__lists {

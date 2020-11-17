@@ -123,15 +123,22 @@
 		top 130px
 		left -50px
 		margin 0
-	.container
+	> .container
 		display flex
 		justify-content space-between
 		padding 400px 20px 0
 .hp__list
 	position relative
+	width 350px
+	flex-shrink 0
+	margin-right 30px
+	img
+		width 300px
 .hp__lists
-	display flex
-	justify-content space-between
+	overflow auto
+	.container
+		display flex
+		justify-content space-between
 .hp__list__title
 	font 50px/60px $font-h
 	margin 0
@@ -228,7 +235,7 @@
 			font 16px/24px $font
 	.hp
 		background url('/img/bg-recommendation.png') center top / 1050px 500px no-repeat
-		.container
+		> .container
 			padding 300px 20px 0
 		.hp__title
 			font 80px/80px $font-h
@@ -262,7 +269,7 @@
 			font 40px/40px $font-h
 			top 80px
 			left 0
-		.container
+		> .container
 			padding 200px 0 0
 	.hp__lists
 		overflow auto
