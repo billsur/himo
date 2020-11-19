@@ -1,18 +1,7 @@
 // @codekit-prepend "vendor/jquery-3.4.1.min.js";
-// @codekit-prepend "vendor/headroom.js";
-// @codekit-prepend "vendor/jquery.headroom.js";
-// @codekit-prepend "vendor/calendar.js";
-// @codekit-prepend "vendor/bxslider.js";
-// @codekit-prepend "vendor/scrollbar.js";
-// @codekit-prepend "vendor/fs-core.js";
-// @codekit-prepend "vendor/fs-dropdown.js";
-// @codekit-prepend "vendor/fs-mediaquery.js";
-// @codekit-prepend "vendor/fs-touch.js";
-// @codekit-prepend "vendor/fs-transition.js";
-// @codekit-prepend "vendor/fs-lightbox.js";
 
 document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale='+(1/window.devicePixelRatio)+', maximum-scale=1.0, user-scalable=0');
-
+console.log(window.devicePixelRatio);
 $(function(){
 	// $("header").headroom({
 	// 	 offset : 150,
