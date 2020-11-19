@@ -11,6 +11,8 @@
 // @codekit-prepend "vendor/fs-transition.js";
 // @codekit-prepend "vendor/fs-lightbox.js";
 
+document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale='+(1/window.devicePixelRatio)+', maximum-scale=1.0, user-scalable=0');
+
 $(function(){
 	// $("header").headroom({
 	// 	 offset : 150,
