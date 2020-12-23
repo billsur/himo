@@ -2,8 +2,9 @@
 // @codekit-prepend "vendor/slick.min.js";
 
 $(function(){
-  const hrlsSlider = $('.hrls__slides');
-  hrlsSlider.slick({
+  const sliderContainer = $(".hrls__slides, .hp__slides");
+
+  sliderContainer.slick({
     slidesToShow: 3,
     dots: true,
     arrows: false,
@@ -23,7 +24,7 @@ $(function(){
     ]
   });
 
-  hrlsSlider.on('wheel', (function(e) {
+  sliderContainer.on('wheel', (function(e) {
     e.preventDefault();
     if (e.originalEvent.deltaY < 0) {
       $(this).slick('slickNext');

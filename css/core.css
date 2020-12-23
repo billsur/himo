@@ -1099,19 +1099,13 @@ header {
 }
 .hp__list {
   position: relative;
-  width: 350px;
-  flex-shrink: 0;
   margin-right: 30px;
 }
-.hp__list img {
-  width: 300px;
+.hp__slides {
+  position: relative;
 }
-.hp__lists {
-  overflow: auto;
-}
-.hp__lists .container {
-  display: flex;
-  justify-content: space-between;
+.hp__slides .slick-dots {
+  bottom: -50px;
 }
 .hp__list__title {
   font: 50px/60px "renogare", arial, sans-serif;
@@ -1248,6 +1242,11 @@ header {
     top: 100px;
     left: -20px;
   }
+  .hp__list {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
   .hp__list__title {
     font: 36px/48px "renogare", arial, sans-serif;
   }
@@ -1291,12 +1290,7 @@ header {
     padding: 200px 0 0;
   }
   .hp__lists {
-    overflow: auto;
     padding: 0 20px;
-  }
-  .hp__list {
-    width: 200px;
-    flex-shrink: 0;
   }
   .hp__list__title {
     font: 22px/30px "renogare", arial, sans-serif;

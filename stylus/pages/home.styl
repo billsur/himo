@@ -131,16 +131,11 @@ header
     padding 400px 20px 0
 .hp__list
   position relative
-  width 350px
-  flex-shrink 0
   margin-right 30px
-  img
-    width 300px
-.hp__lists
-  overflow auto
-  .container
-    display flex
-    justify-content space-between
+.hp__slides
+  position relative
+  .slick-dots
+    bottom -50px
 .hp__list__title
   font 50px/60px $font-h
   margin 0
@@ -246,6 +241,10 @@ header
       font 80px/80px $font-h
       top 100px
       left -20px
+  .hp__list
+    width 80%
+    display block
+    margin auto
   .hp__list__title
     font 36px/48px $font-h
   .hp__list__subtitle
@@ -280,11 +279,7 @@ header
     > .container
       padding 200px 0 0
   .hp__lists
-    overflow auto
     padding 0 20px
-  .hp__list
-    width 200px
-    flex-shrink 0
   .hp__list__title
     font 22px/30px $font-h
   .hp__list__subtitle
