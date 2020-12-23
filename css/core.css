@@ -708,8 +708,13 @@ header .container {
 footer {
   text-align: center;
 }
+header {
+  position: fixed;
+  background: rgba(0,0,0,0.9);
+}
 .hb {
-  background: url("/img/himo-lifestyle.jpg") center bottom/cover no-repeat;
+  background: url("/img/header-himo.png") center bottom/cover no-repeat;
+  background-attachment: fixed;
 }
 .hb .container {
   height: 720px;
@@ -722,7 +727,7 @@ footer {
   display: flex;
   align-items: center;
   color: #fff !important;
-  text-shadow: -2px 2px 10px rgba(0,0,0,0.2);
+  text-shadow: -2px 2px 10px rgba(255,255,255,0.6);
 }
 .header__action .mi {
   margin-left: 10px;
@@ -730,27 +735,29 @@ footer {
 .hb__header {
   padding: 0 20px;
 }
-.hb__title {
-  font: 130px/100px "renogare", arial, sans-serif;
-  color: #ff5c00;
+.hb__header__logo img {
   padding-top: 210px;
-  margin: 0;
-}
-.hb__subtitle {
-  font: 28px/32px "renogare", arial, sans-serif;
-  color: #fff;
-  margin-top: 20px;
 }
 .hbo h2 {
   font: 65px/85px "hanuman", sans-serif;
   color: #ff5c00;
 }
-.hbo .container {
-  display: flex;
-  align-items: center;
+.hbo--triangle {
+  background: url("/img/shape-triangle.png") no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -55px;
+  z-index: 1;
 }
 .hbo--right {
   margin-left: 70px;
+}
+.hbo__content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
 }
 .hbo__features {
   display: flex;
@@ -848,7 +855,7 @@ footer {
   text-align: center;
 }
 .hf__col__img img {
-  width: 400px;
+  width: 100%;
 }
 .hf__col__header {
   padding: 10px 48px;
@@ -971,6 +978,16 @@ footer {
   padding: 30px 0;
 }
 @media screen and (max-width: 1050px) {
+  .hb {
+    background: none;
+  }
+  .hb .container {
+    background: url("/img/header-himo-long.png") center bottom/cover no-repeat;
+    height: 600px;
+  }
+  .hb__header__logo img {
+    width: 45%;
+  }
   .hbo--left {
     width: 40%;
   }
@@ -986,9 +1003,6 @@ footer {
   .hbo__feature__subtitle {
     font: 18px/24px "hanuman", sans-serif;
   }
-  .hrl {
-    width: 360px;
-  }
   .hq {
     padding: 60px 40px 200px;
   }
@@ -997,9 +1011,6 @@ footer {
   }
   .hf .hf__title {
     font: 80px/80px "renogare", arial, sans-serif;
-  }
-  .hf__col__img img {
-    width: 300px;
   }
   .hf__col__title {
     font: 500 36px/48px "hanuman", sans-serif;
@@ -1038,10 +1049,14 @@ footer {
     width: 240px;
   }
 }
+.slick-slide:focus,
+.slick-slide a {
+  outline: none;
+}
+.slick-slide img {
+  width: 100%;
+}
 @media screen and (max-width: 599px) {
-  .hb .container {
-    height: 600px;
-  }
   .hb__title {
     font: 80px/80px "renogare", arial, sans-serif;
   }
