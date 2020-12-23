@@ -2,7 +2,7 @@
 // @codekit-prepend "vendor/slick.min.js";
 
 $(function(){
-  const sliderContainer = $(".hrls__slides, .hp__slides");
+  const sliderContainer = $('.hrls__slides, .hp__slides');
 
   sliderContainer.slick({
     slidesToShow: 3,
@@ -32,6 +32,14 @@ $(function(){
       $(this).slick('slickPrev');
     }
   }));
+
+  $('.header__action').on('click', function (e) {
+    e.preventDefault()
+
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top - 125,
+    }, 1000)
+  })
 })
 
 // home spec number animation
