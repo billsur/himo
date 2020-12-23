@@ -1003,22 +1003,16 @@ header {
 .hr .container {
   padding: 0 20px;
 }
-.hrls {
-  overflow: auto;
-}
-.hrls .container {
-  display: flex;
-}
 .hrl__header {
   background: #fff;
   width: 90%;
   margin-top: -40px;
+  margin-left: -1px;
   position: relative;
   padding: 20px;
 }
 .hrl {
-  width: 420px;
-  flex-shrink: 0;
+  padding: 10px;
 }
 .hrl:not(:nth-child(1)) {
   margin-left: 20px;
@@ -1334,9 +1328,6 @@ header {
   }
   .hr h2 {
     font: 24px/30px "renogare", arial, sans-serif;
-  }
-  .hrl {
-    width: 300px;
   }
   .hrl h3 {
     font: 14px/22px "renogare", arial, sans-serif;
