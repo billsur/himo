@@ -3,9 +3,36 @@ html
 	head
 		title Website Xiaomi HIMO Indonesia - Sepeda Listrik
 		meta(name="description" content="Beli Sepeda Listrik Original dengan Harga Terbaik di Website Xiaomi HIMO Indonesia.")
-		meta(name="viewport" content="width=device-width, initial-scale=.5")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		meta(charset="utf-8")
+		meta(property="og:title", content="Website Xiaomi HIMO Indonesia - Sepeda Listrik")
+		meta(property="og:site_name", content="himo.id")
+		meta(property="og:url", content="https://himo.id")
+		meta(property="og:description", content="Beli Sepeda Listrik Original dengan Harga Terbaik di Website Xiaomi HIMO Indonesia.")
+		meta(property="og:image", content="https://himo.id/img/meta-image.png")
+		link(rel="canonical", href="https://himo.id")
+		link(rel="apple-touch-icon" href="img/himo-favicon.ico")
+		link(rel="icon" href="img/himo-favicon.ico")
 		link(rel="stylesheet", href="css/core.css?11")
 		script(src="/js/core-dist.js?11")
+		script(type="application/ld+json").
+			{
+				"@context": "https://schema.org",
+				"@type": "Product",
+				"name": "Sepeda Listrik Lankeleisi",
+				"image": "img/img-share.png",
+				"aggregateRating": {
+					"@type": "AggregateRating",
+					"ratingValue": "4.5",
+					"reviewCount": "275"
+				},
+				"offers": {
+					"@type": "AggregateOffer",
+					"lowPrice": "7400000",
+					"highPrice": "13500000",
+					"priceCurrency": "IDR"
+				}
+			}
 	body
 		header
 			.container
@@ -24,7 +51,7 @@ html
 				.hbo--triangle
 				.hbo__content
 					.hbo--left
-						img(src="img/himo-bike.png")
+						img(src="img/himo-bike.png" alt="Sepeda Listrik")
 					.hbo--right
 						h2 Sepeda Listrik <br>Bebas Emisi <br>dengan Fitur Terkini
 						.hbo__features
@@ -107,7 +134,7 @@ html
 				.hf__cols
 					.hf__col
 						.hf__col__img
-							img(src="img/himo-structure.png")
+							img(src="img/himo-structure.png" alt="Body Sepeda")
 						.hf__col__header
 							h3.hf__col__title Desain Trendi
 							p Body lebih ringan karena terbuat dari material aluminium alloy. Desain trendi dengan pilihan warna memukau, membuat Anda lebih percaya diri saat mengendarainya.
@@ -116,16 +143,16 @@ html
 							h3.hf__col__title Nyaman
 							p Sadel berbahan waterproof yang ketinggiannya dapat diatur sesuai kebutuhan. Sehingga akan terasa lebih nyaman saat mengendarainya.
 						.hf__col__img
-							img(src="img/himo-saddle.png")
+							img(src="img/himo-saddle.png" alt="Sadel Sepeda")
 					.hf__col
 						.hf__col__header
 							h3.hf__col__title Keamanan
 							p Dilengkapi dengan rem cakram yang membuat proses pengereman lebih akurat. Ada juga bel dan lampu LED untuk berkendara saat malam hari.
 						.hf__col__img
-							img(src="img/himo-wheel.png")
+							img(src="img/himo-wheel.png" alt="Rem")
 					.hf__col
 						.hf__col__img
-							img(src="img/himo-compact.png")
+							img(src="img/himo-compact.png" alt="Sepeda Lipat")
 						.hf__col__header
 							h3.hf__col__title Praktis
 							p Ditambah fitur lipat atau foldable. Sehingga lebih praktis dibawa ke mana-mana atau diletakan di dalam mobil dan kendaraan umum.
@@ -139,32 +166,32 @@ html
 							a(href="https://www.jakmall.com/xiaomi-house/xiaomi-himo-c20-sepeda-elektrik-smart-moped-bicycle-250w-80km#3810507659903" target="_blank").hp__list
 								h3.hp__list__title HIMO C20
 								.hp__list__subtitle Eco Friendly, Saddle Multifunction
-								img(src="img/himo-c20.png")
+								img(src="img/himo-c20.png" alt="HIMO C20")
 						div
 							a(href="https://www.jakmall.com/xiaomi-house/xiaomi-himo-z20-sepeda-lipat-elektrik-smart-moped-bicycle-250w-80km#6629312384940" target="_blank").hp__list
 								h3.hp__list__title HIMO Z20
 								.hp__list__subtitle Saddle Multifunction, Foldable
-								img(src="img/himo-z20.png")
+								img(src="img/himo-z20.png" alt="HIMO Z20")
 						div
 							a(href="https://www.jakmall.com/xiaomi-house/xiaomi-himo-z16-sepeda-lipat-elektrik-smart-bicycle-36v250w-80km#1879930743819" target="_blank").hp__list
 								h3.hp__list__title HIMO Z16
 								.hp__list__subtitle Foldable, Rear Shock Absorber
-								img(src="img/himo-z16.png")
+								img(src="img/himo-z16.png" alt="HIMO Z16")
 						div
 							a(href="https://www.jakmall.com/xiaomi-house/xiaomi-himo-c26-sepeda-gunung-elektrik-smart-moped-bicycle-250w-100km#2872726368080" target="_blank").hp__list
 								h3.hp__list__title HIMO C26
 								.hp__list__subtitle Eco Friendly, Mountain Bike
-								img(src="img/himo-c26.png")
+								img(src="img/himo-c26.png" alt="HIMO C26")
 						div
 							a(href="https://www.jakmall.com/xiaomi-house/xiaomi-himo-c16-city-bike-sepeda-elektrik-smart-moped-250w#5164986152983" target="_blank").hp__list
 								h3.hp__list__title HIMO C16
 								.hp__list__subtitle Basket, Pillion
-								img(src="img/himo-c16.png")
+								img(src="img/himo-c16.png" alt="HIMO C16")
 						div
 							a(href="https://www.jakmall.com/xiaomi-house/xiaomi-himo-z14-sepeda-lipat-elektrik-350w-12ah-standard-edition#6393110506510" target="_blank").hp__list
 								h3.hp__list__title HIMO Z14
 								.hp__list__subtitle Pillion, Foldable
-								img(src="img/himo-z14.png")
+								img(src="img/himo-z14.png" alt="HIMO Z14")
 		.hc
 			.container
 				h2.hc__title COVERAGE
