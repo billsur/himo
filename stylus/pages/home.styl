@@ -1,3 +1,9 @@
+heading($size, $height)
+  font-family sans-serif
+  font-weight bold
+  font-size $size
+  line-height $height
+
 .hb
   background url('/img/header-himo.png') center bottom /cover no-repeat
   background-attachment fixed
@@ -68,7 +74,7 @@
   p
     font 16px/24px $font
   h3
-    font 20px/26px $font-h
+    heading(20px, 26px)
     margin 0
 .hq
   background url("/img/bg-himo-in-garden.jpg") center bottom / cover no-repeat
@@ -166,8 +172,7 @@
   .mi
     color $orange
   span
-    font 22px/30px $font-h
-    letter-spacing -.5px
+    heading(22px, 30px)
     margin-left 20px
     color #464646
 .hc__col
@@ -254,10 +259,10 @@
   .hc__col__contact
     margin-top 20px
     span
-      font 18px/24px $font-h
+      heading(18px, 24px)
   .hc__col
     h3
-      font 18px/24px $font-h
+      heading(18px, 24px)
       margin-top 20px
   .hs
     img
@@ -270,6 +275,13 @@
     width 100%
 
 +break(mobile)
+  .hb
+    .container
+      padding 10px
+  .hb__header__logo
+    text-align center
+    img
+      width 80%
   .hb__title
     font 80px/80px $font-h
   .hp
@@ -306,9 +318,11 @@
     h2
       font 24px/30px $font-h
   .hrl
+    padding 0
     h3
-      font 16px/24px $font-h
+      font 16px/24px
     p
+      font 14px/22px
       margin 5px 0
   .hrl__header
     padding 10px
