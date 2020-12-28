@@ -3,6 +3,15 @@ heading($size, $height)
   font-weight bold
   font-size $size
   line-height $height
+arrow($top = 40%)
+  position absolute
+  color white
+  background rgba(black, .3)
+  cursor pointer
+  border-radius 5px
+  top $top
+  &:hover
+    background rgba(black, .8)
 
 .hb
   background url('/img/header-himo.png') center bottom /cover no-repeat
@@ -59,7 +68,7 @@ heading($size, $height)
     font 40px/40px $font-h
     color $orange
   .container
-    padding 0 20px
+    padding 0 40px
 .hrl__header
   background white
   width 90%
@@ -76,6 +85,12 @@ heading($size, $height)
   h3
     heading(20px, 26px)
     margin 0
+.hrls__arrow--prev
+  arrow()
+  left 0
+.hrls__arrow--next
+  arrow()
+  right 0
 .hq
   background url("/img/bg-himo-in-garden.jpg") center bottom / cover no-repeat
   padding 100px 40px 300px
@@ -148,6 +163,12 @@ heading($size, $height)
 .hp__list__subtitle
   font 22px/34px $font
   color white
+.hp__arrow--prev
+  arrow()
+  left -40px
+.hp__arrow--next
+  arrow()
+  right 0
 .hc
   margin-top 100px
 .hc__title
@@ -253,6 +274,12 @@ heading($size, $height)
     font 36px/48px $font-h
   .hp__list__subtitle
     font 16px/24px $font
+  .hrls__arrow--prev,
+  .hp__arrow--prev
+    left 10px
+  .hrls__arrow--next,
+  .hp__arrow--next
+    right 10px
   .hc__title
     font 80px/80px $font-h
     left -20px
@@ -326,6 +353,9 @@ heading($size, $height)
       margin 5px 0
   .hrl__header
     padding 10px
+  .hrls__arrow,
+  .hp__arrow
+    display none
   .hq
     padding 60px 40px 120px
     blockquote
