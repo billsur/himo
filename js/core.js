@@ -10,6 +10,7 @@ $(function(){
   const recommendSlides = $('.hp__slides');
   const recommendSlidesNextArrow = $('.hp__arrow--next');
   const recommendSlidesPrevArrow = $('.hp__arrow--prev');
+  const MEDIA_MOBILE = 599;
 
   productReviewSlides.slick(
     slickProps(productReviewPrevArrow ,productReviewNextArrow)
@@ -34,6 +35,15 @@ $(function(){
     $('html, body').animate({
       scrollTop: $($(this).attr('href')).offset().top - 125,
     }, 1000)
+  })
+
+  if(window.innerWidth < MEDIA_MOBILE){
+    animateNumber()
+  }
+
+  // home spec number animation
+  $(window).scroll(function () {
+    animateNumber()
   })
 })
 
@@ -60,12 +70,11 @@ function slickProps(prevSelector, nextSelector){
   }
 }
 
-// home spec number animation
-$(window).on('scroll', function () {
-	var top_of_element = $(".hbo").offset().top;
-	var bottom_of_element = $(".hbo").offset().top + $(".hbo").outerHeight();
-  var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+function animateNumber() {
+  var top_of_element = $('.hbo__feature').offset().top;
   var top_of_screen = $(window).scrollTop();
+  var bottom_of_element = top_of_element + $('.hbo__feature').outerHeight();
+  var bottom_of_screen = top_of_screen + $(window).innerHeight();
 
 	if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
 		$('.hbo__feature__title__number').each(function (index, element) {
@@ -73,7 +82,7 @@ $(window).on('scroll', function () {
 			$(element).prop('Counter', initialPoint).animate({
 				Counter: $(element).text()
 			}, {
-				duration: 2500,
+				duration: 1500,
 				easing: 'swing',
 				step: function (now) {
 					$(element).text(Math.ceil(now));
@@ -83,4 +92,4 @@ $(window).on('scroll', function () {
 
 		$(window).unbind('scroll');
 	}
-})
+}
