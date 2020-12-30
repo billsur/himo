@@ -1,342 +1,382 @@
-.hb
-	background url('/img/himo-lifestyle.jpg') center bottom / cover no-repeat
-	.container
-		height 720px
-.header__logo
-	img
-		width 60px
-.header__action
-	font bold 20px/30px $font-h
-	display flex
-	align-items center
-	color white!important
-	text-shadow -2px 2px 10px rgba(black, .2)
-	.mi
-		margin-left 10px
-.hb__header
-	padding 0 20px
-.hb__title
-	font 130px/100px $font-h
-	color $orange
-	padding-top 210px
-	margin 0
-.hb__subtitle
-	font 28px/32px $font-h
-	color white
-	margin-top 20px
-.hbo
-	h2
-		font 65px/85px $font
-		color $orange
-	.container
-		display flex
-		align-items center
-	&--right
-		margin-left 70px
-.hbo__features
-	display flex
-	justify-content space-between
-.hbo__feature__title
-	font 60px/60px $font-h
-	color $purple
-.hbo__feature__subtitle
-	font 25px/30px $font
-	color black
-.hr
-	h2
-		font 40px/40px $font-h
-		color $orange
-	.container
-		padding 0 20px
-.hrls
-	overflow auto
-	.container
-		display flex
-.hrl__header
-	background white
-	width 90%
-	margin-top -40px
-	position relative
-	padding 20px
-.hrl
-	width 420px
-	flex-shrink 0
-	&:not(:nth-child(1))
-		margin-left 20px
-	p
-		font 14px/24px $font
-	h3
-		font 18px/26px $font-h
-		margin 0
-.hq
-	background url("/img/bg-himo-in-garden.jpg") center bottom / cover no-repeat
-	padding 100px 40px 300px
-	blockquote
-		font 40px/70px $font
-		color #999
-		border-left 8px solid $orange
-		padding-left 30px
+heading($size, $height)
+  font-family sans-serif
+  font-weight bold
+  font-size $size
+  line-height $height
+arrow($top = 40%)
+  position absolute
+  color white
+  background rgba(black, .3)
+  cursor pointer
+  border-radius 5px
+  top $top
+  &:hover
+    background rgba(black, .8)
 
+.hb
+  background url('/img/header-himo.png') center bottom /cover no-repeat
+  background-attachment fixed
+  .container
+    height 720px
+.header__logo
+  img
+    width 50px
+.header__action
+  font bold 20px/30px $font-h
+  display flex
+  align-items center
+  color white!important
+  text-shadow -2px 2px 10px rgba(white, .6)
+  .mi
+    margin-left 10px
+.hb__header
+  padding 0 20px
+.hb__header__logo
+  img
+    padding-top 210px
+.hbo
+  h2
+    font 65px/85px $font
+    color $orange
+  &--triangle
+    background url("/img/shape-triangle.png") no-repeat
+    height 100%
+    width 100%
+    background-size contain
+    position absolute
+    top -6%
+    left 0
+    z-index 1
+  &--right
+    margin-left 70px
+.hbo__content
+  display flex
+  align-items center
+  position relative
+  z-index 2
+.hbo__features
+  display flex
+  justify-content space-between
+.hbo__feature__title
+  font 60px/60px $font-h
+  color $purple
+.hbo__feature__subtitle
+  font 25px/30px $font
+  color black
+.hr
+  h2
+    font 40px/40px $font-h
+    color $orange
+  .container
+    padding 0 40px
+.hrl__header
+  background white
+  width 90%
+  margin-top -40px
+  margin-left -1px
+  position relative
+  padding 20px
+.hrl
+  padding 10px
+  &:not(:nth-child(1))
+    margin-left 20px
+  p
+    font 16px/24px $font
+  h3
+    heading(20px, 26px)
+    margin 0
+.hrls__arrow--prev
+  arrow()
+  left 0
+.hrls__arrow--next
+  arrow()
+  right 0
+.hq
+  background url("/img/bg-himo-in-garden.jpg") center bottom / cover no-repeat
+  padding 100px 40px 300px
+  blockquote
+    font 40px/70px $font
+    color #999
+    border-left 8px solid $orange
+    padding-left 30px
 .hf
-	.hf__title
-		font 100px/100px $font-h
-		letter-spacing -4px
-		color rgba(black, .1)
-		margin-left -50px
-		margin-bottom 0
-	.container
-		padding 0 20px
+  .hf__title
+    font 100px/100px $font-h
+    letter-spacing -4px
+    color rgba(black, .1)
+    margin-left -50px
+    margin-bottom 0
+  .container
+    padding 0 20px
 .hf__cols
-	display flex
-	flex-flow row wrap
-	margin-top -80px
+  display flex
+  flex-flow row wrap
+  margin-top -80px
 .hf__col
-	width 50%
-	padding 30px 0 0
-	&:nth-child(2),
-	&:nth-child(3)
-		background black
-		p
-			color #ddd
-	p
-		font 20px/30px $font
-		margin-top 10px
+  width 50%
+  padding 30px 0 0
+  &:nth-child(2),
+  &:nth-child(3)
+    background black
+    p
+      color #ddd
+  p
+    font 20px/30px $font
+    margin-top 10px
 .hf__col__title
-	font 500 48px/64px $font
-	color $orange
-	margin 0
+  font 500 48px/64px $font
+  color $orange
+  margin 0
 .hf__col__img
-	text-align center
-	img
-		width 400px
+  text-align center
+  img
+    width 100%
 .hf__col__header
-	padding 10px 48px
+  padding 10px 48px
 
 .hp
-	background url('/img/bg-recommendation.png') center top no-repeat
-	margin-top 100px
-	.hp__title
-		font 100px/100px $font-h
-		letter-spacing -4px
-		color rgba(black, .1)
-		position absolute
-		top 130px
-		left -50px
-		margin 0
-	> .container
-		display flex
-		justify-content space-between
-		padding 400px 20px 0
+  background url('/img/bg-recommendation.png') center top no-repeat
+  margin-top 100px
+  .hp__title
+    font 100px/100px $font-h
+    letter-spacing -4px
+    color rgba(black, .1)
+    position absolute
+    top 130px
+    left -50px
+    margin 0
+  > .container
+    display flex
+    justify-content space-between
+    padding 400px 20px 0
 .hp__list
-	position relative
-	width 350px
-	flex-shrink 0
-	margin-right 30px
-	img
-		width 300px
-.hp__lists
-	overflow auto
-	.container
-		display flex
-		justify-content space-between
+  position relative
+  margin-right 30px
+.hp__slides
+  position relative
+  .slick-dots
+    bottom -50px
 .hp__list__title
-	font 50px/60px $font-h
-	margin 0
-	color white
+  font 50px/60px $font-h
+  margin 0
+  color white
 .hp__list__subtitle
-	font 22px/34px $font
-	color white
+  font 22px/34px $font
+  color white
+.hp__arrow--prev
+  arrow()
+  left -40px
+.hp__arrow--next
+  arrow()
+  right 0
 .hc
-	margin-top 100px
+  margin-top 100px
 .hc__title
-	font 100px/100px $font-h
-	letter-spacing -4px
-	color rgba(black, .1)
-	position absolute
-	top 0
-	left -50px
-	margin 0
+  font 100px/100px $font-h
+  letter-spacing -4px
+  color rgba(black, .1)
+  position absolute
+  top 0
+  left -50px
+  margin 0
 .hc__col__title
-	font 24px/36px $font-h
-	color $purple
+  font 24px/36px $font-h
+  color $purple
 .hc__row
-	display flex
-	justify-content space-between
-	padding 60px 20px 0
+  display flex
+  justify-content space-between
+  padding 60px 20px 0
 .hc__col__contact
-	display flex
-	align-items center
-	margin-top 30px
-	.mi
-		color $orange
-	span
-		font 20px/30px $font-h
-		letter-spacing -.5px
-		margin-left 20px
-		color #464646
+  display flex
+  align-items center
+  margin-top 30px
+  .mi
+    color $orange
+  span
+    heading(22px, 30px)
+    margin-left 20px
+    color #464646
 .hc__col
-	width 50%
-	h3
-		font 20px/30px $font-h
-		margin-top 30px
+  width 50%
+  h3
+    font 22px/30px $font-h
+    margin-top 30px
 .hs
-	img
-		width 380px
-		margin-right 20px
-	.container
-		padding 0 20px
+  img
+    width 380px
+    margin-right 20px
+  .container
+    padding 0 20px
 .hs__title
-	font 24px/36px $font-h
-	color $purple
+  font 24px/36px $font-h
+  color $purple
 .hseo
-	margin-top 100px
-	.container
-		padding 0 20px
-	h2
-		font 24px/30px $font-h
-		letter-spacing -.5px
-		margin-top 20px
-	p
-		font 16px/28px $font
-	h3
-		font 18px/24px $font-h
-		margin 30px 0 0
+  margin-top 100px
+  .container
+    padding 0 20px
+  h2
+    font 24px/30px $font-h
+    letter-spacing -.5px
+    margin-top 20px
+  p
+    font 16px/28px $font
+  h3
+    font 18px/24px $font-h
+    margin 30px 0 0
 .hcopy
-	padding 30px 0
+  padding 30px 0
 
 +break(tablet)
-	.hbo
-		&--left
-			width 40%
-		h2
-			font 42px/64px $font
-		.container
-			padding 0 20px
-	.hbo__feature__title
-		font 40px/40px $font-h
-	.hbo__feature__subtitle
-		font 18px/24px $font
-	.hrl
-		width 360px
-	.hq
-		padding 60px 40px 200px
-		blockquote
-			font 30px/55px $font
-	.hf
-		.hf__title
-			font 80px/80px $font-h
-	.hf__col__img
-		img
-			width 300px
-	.hf__col__title
-		font 500 36px/48px $font
-	.hf__col
-		p
-			font 16px/24px $font
-	.hp
-		background url('/img/bg-recommendation.png') center top / 1050px 500px no-repeat
-		> .container
-			padding 300px 20px 0
-		.hp__title
-			font 80px/80px $font-h
-			top 100px
-			left -20px
-	.hp__list__title
-		font 36px/48px $font-h
-	.hp__list__subtitle
-		font 16px/24px $font
-	.hc__title
-		font 80px/80px $font-h
-		left -20px
-	.hc__col__contact
-		margin-top 20px
-	.hc__col
-		h3
-			margin-top 20px
-	.hs
-		img
-			width 240px
+  .hb
+    background none
+    .container
+      background url('/img/header-himo-long.png') center bottom / cover no-repeat
+      height 600px
+  .hb__header__logo
+    img
+      width 45%
+  .hbo
+    &--left
+      width 40%
+    h2
+      font 42px/64px $font
+    .container
+      padding 0 20px
+  .hbo__feature__title
+    font 40px/40px $font-h
+  .hbo__feature__subtitle
+    font 18px/24px $font
+  .hq
+    padding 60px 40px 200px
+    blockquote
+      font 30px/55px $font
+  .hf
+    .hf__title
+      font 80px/80px $font-h
+  .hf__col__title
+    font 500 36px/48px $font
+  .hf__col
+    p
+      font 16px/24px $font
+  .hp
+    background url('/img/bg-recommendation.png') center top / 1050px 500px no-repeat
+    > .container
+      padding 300px 20px 0
+    .hp__title
+      font 80px/80px $font-h
+      top 100px
+      left -20px
+  .hp__list
+    width 80%
+    display block
+    margin auto
+  .hp__list__title
+    font 36px/48px $font-h
+  .hp__list__subtitle
+    font 16px/24px $font
+  .hrls__arrow--prev,
+  .hp__arrow--prev
+    left 10px
+  .hrls__arrow--next,
+  .hp__arrow--next
+    right 10px
+  .hc__title
+    font 80px/80px $font-h
+    left -20px
+  .hc__col__contact
+    margin-top 20px
+    span
+      heading(18px, 24px)
+  .hc__col
+    h3
+      heading(18px, 24px)
+      margin-top 20px
+  .hs
+    img
+      width 240px
+
+.slick-slide
+  &:focus, a
+    outline none
+  img
+    width 100%
 
 +break(mobile)
-	.hb
-		.container
-			height 600px
-	.hb__title
-		font 80px/80px $font-h
-	.hp
-		background url('/img/bg-recommendation.png') center top / 600px 310px no-repeat
-		.hp__title
-			font 40px/40px $font-h
-			top 80px
-			left 0
-		> .container
-			padding 200px 0 0
-	.hp__lists
-		overflow auto
-		padding 0 20px
-	.hp__list
-		width 200px
-		flex-shrink 0
-	.hp__list__title
-		font 22px/30px $font-h
-	.hp__list__subtitle
-		font 14px/22px $font
-	.hc__title
-		font 40px/40px $font-h
-	.hf
-		.hf__title
-			font 40px/40px $font-h
-			margin-left -20px
-	.hf__col__header
-		padding 10px 20px
-	.hbo
-		&--left
-			display none
-		&--right
-			margin-left 0
-		h2
-			font 36px/48px $font
-	.hr
-		margin-top 80px
-		h2
-			font 24px/30px $font-h
-	.hrl
-		width 300px
-		h3
-			font 14px/22px $font-h
-		p
-			margin 5px 0
-	.hrl__header
-		padding 10px
-	.hq
-		padding 60px 40px 120px
-		blockquote
-			margin 0
-			font 24px/40px $font
-	.hf__col
-		width 100%
-
-	.hseo
-		h2
-			font 18px/28px $font-h
-		p
-			font 12px/20px $font
-	.hc__col__title
-		font 20px/28px $font-h
-	.hc__row
-		display block
-	.hc__col
-		margin-bottom 40px
-		width 100%
-	.hs
-		a
-			margin-bottom 10px
-	.hs__title
-		font 20px/28px $font-h
-
-
-
-
-
-
-
+  .hb
+    .container
+      padding 10px
+  .hb__header__logo
+    text-align center
+    img
+      width 80%
+  .hb__title
+    font 80px/80px $font-h
+  .hp
+    background url('/img/bg-recommendation.png') center top / 600px 310px no-repeat
+    .hp__title
+      font 40px/40px $font-h
+      top 80px
+      left 0
+    > .container
+      padding 200px 0 0
+  .hp__lists
+    padding 0 20px
+  .hp__list__title
+    font 22px/30px $font-h
+  .hp__list__subtitle
+    font 14px/22px $font
+  .hc__title
+    font 40px/40px $font-h
+  .hf
+    .hf__title
+      font 40px/40px $font-h
+      margin-left -20px
+  .hf__col__header
+    padding 10px 20px
+  .hbo
+    &--left
+      display none
+    &--right
+      margin-left 0
+    h2
+      font 36px/48px $font
+  .hr
+    margin-top 80px
+    h2
+      font 24px/30px $font-h
+  .hrl
+    padding 0
+    h3
+      font 16px/24px
+    p
+      font 14px/22px
+      margin 5px 0
+  .hrl__header
+    padding 10px
+  .hrls__arrow,
+  .hp__arrow
+    display none
+  .hq
+    padding 60px 40px 120px
+    blockquote
+      margin 0
+      font 24px/40px $font
+  .hf__col
+    width 100%
+  .hseo
+    h2
+      font 18px/28px $font-h
+    p
+      font 12px/20px $font
+  .hc__col__title
+    font 20px/28px $font-h
+  .hc__row
+    display block
+  .hc__col
+    margin-bottom 40px
+    width 100%
+  .hs
+    a
+      margin-bottom 10px
+  .hs__title
+    font 20px/28px $font-h

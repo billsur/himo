@@ -1,3 +1,264 @@
-.home {
-  background: #ff0;
+.hb {
+  background: url("/img/header-himo.png") center bottom/cover no-repeat;
 }
+.hb .container {
+  height: 720px;
+}
+.header__logo img {
+  width: 60px;
+}
+.header__action {
+  font: bold 20px/30px $font-h;
+  display: flex;
+  align-items: center;
+  color: #fff !important;
+  text-shadow: -2px 2px 10px rgba(0,0,0,0.2);
+}
+.header__action .mi {
+  margin-left: 10px;
+}
+.hb__header {
+  padding: 0 20px;
+}
+.hb__title {
+  font: 130px/100px $font-h;
+  color: $orange;
+  padding-top: 210px;
+  margin: 0;
+}
+.hb__subtitle {
+  font: 28px/32px $font-h;
+  color: #fff;
+  margin-top: 20px;
+}
+.hbo h2 {
+  font: 65px/85px $font;
+  color: $orange;
+}
+.hbo .container {
+  display: flex;
+  align-items: center;
+}
+.hbo--right {
+  margin-left: 70px;
+}
+.hbo__features {
+  display: flex;
+  justify-content: space-between;
+}
+.hbo__feature__title {
+  font: 60px/60px $font-h;
+  color: $purple;
+}
+.hbo__feature__subtitle {
+  font: 25px/30px $font;
+  color: #000;
+}
+.hr h2 {
+  font: 40px/40px $font-h;
+  color: $orange;
+}
+.hr .container {
+  padding: 0 20px;
+}
+.hrls {
+  overflow: auto;
+}
+.hrls .container {
+  display: flex;
+}
+.hrl__header {
+  background: #fff;
+  width: 90%;
+  margin-top: -40px;
+  position: relative;
+  padding: 20px;
+}
+.hrl {
+  width: 420px;
+  flex-shrink: 0;
+}
+.hrl:not(:nth-child(1)) {
+  margin-left: 20px;
+}
+.hrl p {
+  font: 14px/24px $font;
+}
+.hrl h3 {
+  font: 18px/26px $font-h;
+  margin: 0;
+}
+.hq {
+  background: url("/img/bg-himo-in-garden.jpg") center bottom/cover no-repeat;
+  padding: 100px 40px 300px;
+}
+.hq blockquote {
+  font: 40px/70px $font;
+  color: #999;
+  border-left: 8px solid $orange;
+  padding-left: 30px;
+}
+.hf .hf__title {
+  font: 100px/100px $font-h;
+  letter-spacing: -4px;
+  color: rgba(0,0,0,0.1);
+  margin-left: -50px;
+  margin-bottom: 0;
+}
+.hf .container {
+  padding: 0 20px;
+}
+.hf__cols {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: -80px;
+}
+.hf__col {
+  width: 50%;
+  padding: 30px 0 0;
+}
+.hf__col:nth-child(2),
+.hf__col:nth-child(3) {
+  background: #000;
+}
+.hf__col:nth-child(2) p,
+.hf__col:nth-child(3) p {
+  color: #ddd;
+}
+.hf__col p {
+  font: 20px/30px $font;
+  margin-top: 10px;
+}
+.hf__col__title {
+  font: 500 48px/64px $font;
+  color: $orange;
+  margin: 0;
+}
+.hf__col__img {
+  text-align: center;
+}
+.hf__col__img img {
+  width: 400px;
+}
+.hf__col__header {
+  padding: 10px 48px;
+}
+.hp {
+  background: url("/img/bg-recommendation.png") center top no-repeat;
+  margin-top: 100px;
+}
+.hp .hp__title {
+  font: 100px/100px $font-h;
+  letter-spacing: -4px;
+  color: rgba(0,0,0,0.1);
+  position: absolute;
+  top: 130px;
+  left: -50px;
+  margin: 0;
+}
+.hp > .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 400px 20px 0;
+}
+.hp__list {
+  position: relative;
+  width: 350px;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+.hp__list img {
+  width: 300px;
+}
+.hp__lists {
+  overflow: auto;
+}
+.hp__lists .container {
+  display: flex;
+  justify-content: space-between;
+}
+.hp__list__title {
+  font: 50px/60px $font-h;
+  margin: 0;
+  color: #fff;
+}
+.hp__list__subtitle {
+  font: 22px/34px $font;
+  color: #fff;
+}
+.hc {
+  margin-top: 100px;
+}
+.hc__title {
+  font: 100px/100px $font-h;
+  letter-spacing: -4px;
+  color: rgba(0,0,0,0.1);
+  position: absolute;
+  top: 0;
+  left: -50px;
+  margin: 0;
+}
+.hc__col__title {
+  font: 24px/36px $font-h;
+  color: $purple;
+}
+.hc__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 20px 0;
+}
+.hc__col__contact {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.hc__col__contact .mi {
+  color: $orange;
+}
+.hc__col__contact span {
+  font: 20px/30px $font-h;
+  letter-spacing: -0.5px;
+  margin-left: 20px;
+  color: #464646;
+}
+.hc__col {
+  width: 50%;
+}
+.hc__col h3 {
+  font: 20px/30px $font-h;
+  margin-top: 30px;
+}
+.hs img {
+  width: 380px;
+  margin-right: 20px;
+}
+.hs .container {
+  padding: 0 20px;
+}
+.hs__title {
+  font: 24px/36px $font-h;
+  color: $purple;
+}
+.hseo {
+  margin-top: 100px;
+}
+.hseo .container {
+  padding: 0 20px;
+}
+.hseo h2 {
+  font: 24px/30px $font-h;
+  letter-spacing: -0.5px;
+  margin-top: 20px;
+}
+.hseo p {
+  font: 16px/28px $font;
+}
+.hseo h3 {
+  font: 18px/24px $font-h;
+  margin: 30px 0 0;
+}
+.hcopy {
+  padding: 30px 0;
+}
+break(tablet)
+break(mobile)
